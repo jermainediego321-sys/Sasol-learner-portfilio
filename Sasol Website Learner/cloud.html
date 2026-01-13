@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloud Learnings — Jermaine Richards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">JR • Sasol Learner</a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <ul class="nav-links">
+        <li><a href="cloud.html" aria-current="page">Cloud</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Cloud Learnings</h1>
+      <p class="muted">AZ-900 fundamentals + AZ-104 administrator skills, grounded in hands-on labs.</p>
+
+      <div id="az900" class="card" style="margin-bottom:18px">
+        <h2>AZ-900: Azure Fundamentals</h2>
+        <ul class="checklist">
+          <li>Cloud models: IaaS, PaaS, SaaS; Responsibility split</li>
+          <li>Core services: Compute (VMs), Storage (Blob), Networking (VNet)</li>
+          <li>Authentication & Authorization basics</li>
+          <li>Governance: Management groups, Policy, Blueprints (overview)</li>
+          <li>Cost management & SLAs</li>
+        </ul>
+        <div class="cta-group">
+          <a class="btn small ghost" href="https://learn.microsoft.com/credentials/certifications/azure-fundamentals/" target="_blank">AZ-900 Official</a>
+        </div>
+      </div>
+
+      <div id="az104" class="card">
+        <h2>AZ-104: Azure Administrator</h2>
+        <div class="pill-row">
+          <span class="pill">VNets</span><span class="pill">NSGs</span><span class="pill">VMs</span><span class="pill">Storage</span>
+          <span class="pill">RSV/Backup</span><span class="pill">Monitor</span><span class="pill">Log Analytics</span><span class="pill">RBAC</span>
+        </div>
+        <h3>What I practiced</h3>
+        <ul class="bullets">
+          <li>Provision VNets, subnets, and peerings; validate connectivity</li>
+          <li>Create NSGs & rules; test Bastion/RDP/SSH access</li>
+          <li>Build VMs from images; attach disks; configure boot diagnostics</li>
+          <li>Set up RSV, backup policies, and perform restores</li>
+          <li>Collect metrics/logs, build alert rules and action groups</li>
+          <li>Apply RBAC roles with least privilege and tagging standards</li>
+        </ul>
+        <div class="cta-group">
+          <a class="btn small primary" href="projects.html">See related projects</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jermaine Richards</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

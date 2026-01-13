@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Jermaine Richards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .form{max-width:720px; margin:0 auto}
+    .field{display:flex; flex-direction:column; gap:6px; margin-bottom:14px}
+    .field label{color:#c7d4ee; font-weight:600}
+    .field input, .field textarea{
+      background:#0f1628; color:#e6f0ff; border:1px solid var(--border);
+      border-radius:12px; padding:12px; outline:none
+    }
+    .field input:focus, .field textarea:focus{border-color:rgba(10,132,255,.6); box-shadow:0 0 0 4px rgba(10,132,255,.12)}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">JR • Sasol Learner</a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <ul class="nav-links">
+        <li><a href="cloud.html">Cloud</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="muted">If you'd like to collaborate or provide feedback on my learning path, reach out below.</p>
+
+      <div class="grid two">
+        <section class="card">
+          <h2>Send a Message</h2>
+          <form class="form" action="mailto:jermainediego08@icloud.com" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required />
+            </div>
+            <div class="field">
+              <label for="email">Your Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Topic" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="How can I help?" required></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </form>
+        </section>
+
+        <section class="card contact-card">
+          <h2>Other Channels</h2>
+          <div class="contact-table">
+            <div class="table-row">
+              <span class="label">Email</span>
+              <span class="value"><a href="mailto:jermainediego08@icloud.com">jermainediego08@icloud.com</a></span>
+            </div>
+            <div class="table-row">
+              <span class="label">GitHub</span>
+              <span class="value"><a href="https://github.com/jermainediego321-sys/progress-sasol-learner" target="_blank">jermainediego321-sys</a></span>
+            </div>
+            <div class="table-row">
+              <span class="label">LinkedIn</span>
+              <span class="value"><a href="https://www.linkedin.com/in/jermaine-richards-314b8a326/" target="_blank">Jermaine Richards</a></span>
+            </div>
+            <div class="table-row">
+              <span class="label">Location</span>
+              <span class="value">Secunda, Mpumalanga</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jermaine Richards</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

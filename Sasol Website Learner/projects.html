@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">JR • Sasol Learner</a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <ul class="nav-links">
+        <li><a href="cloud.html">Cloud</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Projects</h1>
+      <p class="muted">Hands-on work showcasing automation, governance, and Azure fundamentals.</p>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Automated VNet with Subnets & NSGs</h3>
+          <p>ARM template that provisions a VNet, subnets, and NSG associations - ideal for repeatable lab setups.</p>
+          <ul class="bullets">
+            <li>Parameters for address spaces & subnet prefixes</li>
+            <li>NSG rules for SSH/RDP and internal traffic</li>
+            <li>Reusable for multiple environments</li>
+          </ul>
+          <div class="cta-group">
+            <a class="btn small primary" href="https://github.com/jermainediego321-sys/azure-quickstart-templates" target="_blank" class="btn primary">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Backup & Recovery Runbook</h3>
+          <p>Documented steps for RSV creation, policy assignment, on-demand backup, and file-level restore tests.</p>
+          <ul class="bullets">
+            <li>Recovery Services Vault standards</li>
+            <li>Retention policy notes</li>
+            <li>Tested restore validation</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Resource Tagging & Cleanup Script</h3>
+          <p>PowerShell to enforce tag standards and remove unused resources with safety checks.</p>
+          <ul class="bullets">
+            <li>Governance alignment (BE50 cost-saving goals)</li>
+            <li>Dry-run mode with reporting</li>
+            <li>Scoped by subscription or RG</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Monitoring Starter Pack</h3>
+          <p>Azure Monitor metrics, Log Analytics workspace link, and basic CPU/Availability alerts.</p>
+          <ul class="bullets">
+            <li>Action group notifications</li>
+            <li>Dashboards for quick visibility</li>
+            <li>Baseline alerts for VMs</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jermaine Richards</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+``
