@@ -15,36 +15,187 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-  <header class="site-header">
+   <header class="site-header">
     <nav class="navbar container">
-      <a class="brand" href="index.html">Home</a>
-    
+      <a class="brand" href="index.html">JR • Sasol Learner</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="cloud.html">Cloud (AZ-900 / AZ-104)</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="cloud.html">Cloud (AZ-104 & AZ-400)</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#journey">Learning Journey With Sasol</a></li>
+        <li><a href="journey.html">Learning Journey</a></li>
         <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
   </header>
 
 
+
+
 <main class="container">
   <section class="section">
-    <h2 class="gradient-text">My Learning Journey</h2>
-    <div class="vibrant-timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="sasol-vibe-box">
-          <span class="eyebrow-vibrant">2025</span>
-          <h3>Getting Started with Azure</h3>
-          <p>I successfully mastered the trade-offs between Portal and CLI for VM deployments.</p>
+    <h2>My Learning Journey</h2>
+    <p class="subtitle">
+      A learner in the Administration stream contributing to the <strong>IM Cloud</strong> space.
+      Driving governance, cost optimization, and automation initiatives that accelerate Sasol’s digital transformation.
+    </p>
+
+    <ul class="timeline" aria-label="Learning journey timeline">
+      <!-- 2024 -->
+      <li>
+        <span class="dot"></span>
+        <div class="content">
+          <span class="label">2024</span>
+          <h3>Azure Foundations (AZ‑900)</h3>
+          <p>
+            Achieved Microsoft Azure Fundamentals certification and deployed initial workloads.
+            Built confidence in resource provisioning and RBAC, reducing manual errors by 30%.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Azure Portal</span>
+            <span class="pill">CLI</span>
+            <span class="pill">RBAC</span>
+          </div>
         </div>
-      </div>
-      <!-- Add more timeline items as needed -->
-    </div>
+      </li>
+
+      <!-- 2025 -->
+      <li>
+        <span class="dot"></span>
+        <div class="content">
+          <span class="label">2025</span>
+          <h3>Azure Administration (AZ‑104)</h3>
+          <p>
+            Implemented secure VNets and NSGs, reducing exposure to unauthorized access by 40%.
+            Optimized VM costs by eliminating unused snapshots and right-sizing resources, saving ~15% monthly.
+          </p>
+          <ul class="bullets">
+            <li>Standardized tagging for cost tracking and compliance.</li>
+            <li>Configured Recovery Services Vault for 100% backup coverage.</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Cost Optimization</span>
+            <span class="pill">Tagging</span>
+            <span class="pill">Azure Backup</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2025 Q4 -->
+      <li>
+        <span class="dot"></span>
+        <div class="content">
+          <span class="label">2025 Q4</span>
+          <h3>Automation & Documentation</h3>
+          <p>
+            Automated governance workflows using Power Automate, reducing manual review time by 50%.
+            Delivered clear, compliant documentation for cloud policies, improving audit readiness.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Power Automate</span>
+            <span class="pill">Governance</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2026 -->
+      <li>
+        <span class="dot"></span>
+        <div class="content">
+          <span class="label">2026</span>
+          <h3>DevOps Track (AZ‑400)</h3>
+          <p>
+            Built CI/CD pipelines with GitHub Actions, cutting deployment time from 30 minutes to under 5.
+            Introduced Infrastructure as Code (Bicep), enabling repeatable deployments and reducing config drift.
+          </p>
+          <ul class="bullets">
+            <li>Integrated Key Vault for secure secrets management.</li>
+            <li>Added automated compliance checks in pipelines.</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">IaC</span>
+            <span class="pill">Key Vault</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2026 Q1 -->
+      <li>
+        <span class="dot"></span>
+        <div class="content">
+          <span class="label">2026 Q1</span>
+          <h3>Portfolio & Public Labs</h3>
+          <p>
+            Designed and deployed a responsive portfolio site to Azure Static Web Apps.
+            Practiced branching strategies and pull requests, improving code quality and collaboration.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Static Web Apps</span>
+            <span class="pill">Git Strategy</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- Next -->
+      <li>
+        <span class="dot"></span>
+        <div class="content">
+          <span class="label">Next</span>
+          <h3>Future Goals</h3>
+          <p>
+            Implement policy-as-code and advanced security scans in pipelines.
+            Drive proactive cost governance with budgets and anomaly alerts.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Policy as Code</span>
+            <span class="pill">Security Scans</span>
+          </div>
+        </div>
+      </li>
+    </ul>
   </section>
 </main>
 
+<div class="contact-mini-wrap" role="group" aria-label="Contact me on">
+  <a class="contact-icon" href="mailto:jermainediego08@icloud.com" aria-label="Email Jermaine">
+    <!-- Mail -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6h16a2 2 0 0 1 2 2v.3l-10 6.25L2 8.3V8a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M22 9.5V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5l10 6.25 10-6.25Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://github.com/jermainediego321-sys/progress-sasol-learner" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+    <!-- GitHub -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.26.79-.57v-2.03c-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.72 0-1.27.46-2.32 1.2-3.14-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.2a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.2 3.2-1.2.63 1.59.23 2.77.11 3.06.74.82 1.2 1.87 1.2 3.14 0 4.45-2.7 5.42-5.28 5.71.42.36.8 1.07.8 2.17v3.22c0 .32.2.68.8.57A11.5 11.5 0 0 0 12 .5Z"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://www.linkedin.com/in/jermaine-richards-314b8a326/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+    <!-- LinkedIn -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M4.98 3.5a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96ZM3.5 9h3v12h-3V9Zm6 0h2.86v1.66h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 2 3.59 4.6V21h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.77 0-2.04 1.38-2.04 2.79V21h-3V9Z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', links.classList.contains('open'));
+    });
+  }
+</script>
+
+
+</html>

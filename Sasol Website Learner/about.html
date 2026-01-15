@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | Jermaine Richards</title>
+  <title>Cloud Learnings — Jermaine Richards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="sasol-page-body">
-<header class="site-header">
+ <header class="site-header">
     <nav class="navbar container">
       <a class="brand" href="index.html">JR • Sasol Learner</a>
 
@@ -16,24 +17,80 @@
       </button>
 
       <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="cloud.html">Cloud (AZ-900 / AZ-104)</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="cloud.html">Cloud (AZ-104 & AZ-400)</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="index.html#journey">Learning Journey</a></li>
+        <li><a href="journey.html">Learning Journey</a></li>
         <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
-  </header>  <!-- Include the same Header here -->
-  <main class="container">
-    <section class="section">
-      <h1 class="gradient-text">The Story Behind the Cloud.</h1>
-      <div class="glass-container">
-        <h2>My Mission</h2>
-        <p>I am a dedicated learner at <strong>Sasol</strong>, focused on engineering a solid foundation across the <strong>Microsoft Azure</strong> ecosystem. I specialize in turning complex infrastructure into clear documentation and repeatable, automated deployments.</p>
-        <p>Operating within the <strong>IM Cloud space</strong>, I act as a technical bridge—streamlining admin processes and mastering the deployment of core Azure services through rigorous hands-on labs.</p>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Cloud Learnings</h1>
+      <p class="muted">AZ-900 fundamentals + AZ-104 administrator skills, grounded in hands-on labs.</p>
+
+      <div id="az900" class="card" style="margin-bottom:18px">
+        <h2>AZ-900: Azure Fundamentals</h2>
+        <ul class="checklist">
+          <li>Cloud models: IaaS, PaaS, SaaS; Responsibility split</li>
+          <li>Core services: Compute (VMs), Storage (Blob), Networking (VNet)</li>
+          <li>Authentication & Authorization basics</li>
+          <li>Governance: Management groups, Policy, Blueprints (overview)</li>
+          <li>Cost management & SLAs</li>
+        </ul>
+        <div class="cta-group">
+          <a class="btn small ghost" href="https://learn.microsoft.com/credentials/certifications/azure-fundamentals/" target="_blank">AZ-900 Official</a>
+        </div>
       </div>
-    </section>
+
+      <div id="az104" class="card">
+        <h2>AZ-104: Azure Administrator</h2>
+        <div class="pill-row">
+          <span class="pill">VNets</span><span class="pill">NSGs</span><span class="pill">VMs</span><span class="pill">Storage</span>
+          <span class="pill">RSV/Backup</span><span class="pill">Monitor</span><span class="pill">Log Analytics</span><span class="pill">RBAC</span>
+        </div>
+        <h3>What I practiced</h3>
+        <ul class="bullets">
+          <li>Provision VNets, subnets, and peerings; validate connectivity</li>
+          <li>Create NSGs & rules; test Bastion/RDP/SSH access</li>
+          <li>Build VMs from images; attach disks; configure boot diagnostics</li>
+          <li>Set up RSV, backup policies, and perform restores</li>
+          <li>Collect metrics/logs, build alert rules and action groups</li>
+          <li>Apply RBAC roles with least privilege and tagging standards</li>
+        </ul>
+        <div class="cta-group">
+          <a class="btn small primary" href="projects.html">See related projects</a>
+        </div>
+      </div>
+    </div>
   </main>
+
+ <div class="contact-mini-wrap" role="group" aria-label="Contact me on">
+  <a class="contact-icon" href="mailto:jermainediego08@icloud.com" aria-label="Email Jermaine">
+    <!-- Mail -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6h16a2 2 0 0 1 2 2v.3l-10 6.25L2 8.3V8a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M22 9.5V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5l10 6.25 10-6.25Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://github.com/jermainediego321-sys/progress-sasol-learner" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+    <!-- GitHub -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.26.79-.57v-2.03c-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.72 0-1.27.46-2.32 1.2-3.14-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.2a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.2 3.2-1.2.63 1.59.23 2.77.11 3.06.74.82 1.2 1.87 1.2 3.14 0 4.45-2.7 5.42-5.28 5.71.42.36.8 1.07.8 2.17v3.22c0 .32.2.68.8.57A11.5 11.5 0 0 0 12 .5Z"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://www.linkedin.com/in/jermaine-richards-314b8a326/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+    <!-- LinkedIn -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M4.98 3.5a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96ZM3.5 9h3v12h-3V9Zm6 0h2.86v1.66h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 2 3.59 4.6V21h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.77 0-2.04 1.38-2.04 2.79V21h-3V9Z"/>
+    </svg>
+  </a>
+</div>
+  <script src="script.js"></script>
 </body>
 </html>

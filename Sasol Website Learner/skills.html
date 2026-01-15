@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills – Jermaine Richards</title>
+  <meta name="description" content="Skills and competencies for Jermaine Richards: Azure administration, DevOps (AZ‑400), governance, cost optimization, automation, and documentation." />
+  <meta name="theme-color" content="#0a84ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">JR • Sasol Learner</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" aria-current="page">Skills</a></li>
+        <li><a href="cloud.html">Cloud (AZ‑104 &amp; AZ‑400)</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="journey.html">Learning Journey</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <!-- Intro -->
+    <section class="section">
+      <h1>Skills &amp; Competencies</h1>
+      <p class="subtitle">
+        A learner under the Administration stream, contributing to the <strong>IM Cloud</strong> space.
+        I focus on governance, cost optimization, and automation—using Infrastructure as Code (IaC),
+        repeatable patterns, and clear documentation to support Sasol’s digital transformation.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Azure</span>
+        <span class="pill">DevOps</span>
+        <span class="pill">Governance</span>
+        <span class="pill">Cost Optimization</span>
+        <span class="pill">Automation</span>
+        <span class="pill">IaC</span>
+        <span class="pill">Documentation</span>
+      </div>
+    </section>
+
+    <!-- Cloud & Azure -->
+    <section class="section">
+      <h2>Cloud (Microsoft Azure)</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Core Administration</h3>
+          <ul class="checklist">
+            <li>Resource Groups, subscriptions, RBAC &amp; least-privilege</li>
+            <li>Compute: VMs, images, sizing, Azure Bastion access</li>
+            <li>Storage: accounts, containers, lifecycle, replication (LRS/ZRS)</li>
+            <li>Backups &amp; Recovery Services Vault (restore testing)</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">AZ‑104</span>
+            <span class="pill">RBAC</span>
+            <span class="pill">Bastion</span>
+            <span class="pill">Backup</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Networking &amp; Security</h3>
+          <ul class="checklist">
+            <li>VNets, subnets, UDRs &amp; NSG rule design</li>
+            <li>Private Endpoints &amp; service isolation</li>
+            <li>DNS Private Resolver &amp; rulesets (lab)</li>
+            <li>Cost-aware egress/ingress patterns</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">VNet</span>
+            <span class="pill">NSG</span>
+            <span class="pill">Private Endpoint</span>
+            <span class="pill">DNS Resolver</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Governance &amp; Cost</h3>
+          <ul class="checklist">
+            <li>Tagging standards (Owner, CostCenter, Environment)</li>
+            <li>Budgets, cost analysis, unused resource cleanup</li>
+            <li>Policy alignment &amp; documentation for audits</li>
+            <li>Snapshot cleanup &amp; right‑sizing to save costs</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Tagging</span>
+            <span class="pill">Budgets</span>
+            <span class="pill">Cost Analysis</span>
+            <span class="pill">Governance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DevOps & Automation -->
+    <section class="section alt">
+      <h2>DevOps &amp; Automation</h2>
+      <div class="grid two">
+        <div class="card focus">
+          <h3>CI/CD &amp; Release</h3>
+          <ul class="checklist">
+            <li>GitHub Actions for build/test/deploy (Static Web Apps)</li>
+            <li>Branching, PRs, code reviews, conventional commits</li>
+            <li>Secrets management with Azure Key Vault</li>
+            <li>Basic quality gates (linting, formatting, checks)</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">Azure DevOps</span>
+            <span class="pill">Key Vault</span>
+            <span class="pill">Static Web Apps</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Infrastructure as Code (IaC)</h3>
+          <ul class="checklist">
+            <li>ARM/Bicep templates for repeatable deployments</li>
+            <li>Parameterization &amp; environment parity</li>
+            <li>Idempotency &amp; drift reduction</li>
+            <li>Intro to Terraform (multi‑env exploration)</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Bicep</span>
+            <span class="pill">ARM</span>
+            <span class="pill">Terraform (intro)</span>
+            <span class="pill">Repeatable Deploys</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Observability & Ops -->
+    <section class="section">
+      <h2>Monitoring &amp; Reliability</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Observability</h3>
+          <ul class="checklist">
+            <li>Application Insights availability tests</li>
+            <li>Azure Monitor metrics &amp; alerts (signal hygiene)</li>
+            <li>Basic log queries (Log Analytics)</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">App Insights</span>
+            <span class="pill">Azure Monitor</span>
+            <span class="pill">Log Analytics</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Operational Excellence</h3>
+          <ul class="checklist">
+            <li>Runbooks/Checklists for repeatable ops</li>
+            <li>Incident basics: triage, comms, post‑incident notes</li>
+            <li>Documentation that passes audit checks</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Runbooks</span>
+            <span class="pill">Post‑Incident</span>
+            <span class="pill">Audit‑Ready Docs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foundations -->
+    <section class="section alt">
+      <h2>Foundations &amp; Productivity</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Languages &amp; Scripting</h3>
+          <ul class="checklist">
+            <li>Bash/CLI for Azure tasks</li>
+            <li>PowerShell (basics for admin tasks)</li>
+            <li>JavaScript for simple front‑end tweaks</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Bash</span>
+            <span class="pill">PowerShell</span>
+            <span class="pill">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tools</h3>
+          <ul class="checklist">
+            <li>VS Code, Live Share, Git &amp; GitHub</li>
+            <li>Azure Portal &amp; CLI</li>
+            <li>Power Automate for workflows</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">VS Code</span>
+            <span class="pill">Git/GitHub</span>
+            <span class="pill">Power Automate</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Soft Skills</h3>
+          <ul class="checklist">
+            <li>Clear documentation &amp; stakeholder updates</li>
+            <li>Structured problem solving under time pressure</li>
+            <li>Continuous learning (AZ‑900, AZ‑104, AZ‑400)</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Comms</span>
+            <span class="pill">Documentation</span>
+            <span class="pill">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements / Badges -->
+    <section class="section">
+      <h2>Certifications &amp; Milestones</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Current</h3>
+          <ul class="checklist">
+            <li>Microsoft Azure Fundamentals (AZ‑900)</li>
+            <li>Hands‑on AZ‑104 labs (VNets, NSG, Bastion, Backup)</li>
+            <li>Deployed portfolio to Azure Static Web Apps</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">AZ‑900</span>
+            <span class="pill">AZ‑104 (in progress)</span>
+            <span class="pill">Static Web Apps</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Next</h3>
+          <ul class="bullets">
+            <li>Azure Administrator (AZ‑104) exam target</li>
+            <li>DevOps Engineer (AZ‑400) learning path</li>
+            <li>Policy as Code, budgets &amp; anomaly alerts</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">AZ‑104</span>
+            <span class="pill">AZ‑400</span>
+            <span class="pill">Governance+</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ <div class="contact-mini-wrap" role="group" aria-label="Contact me on">
+  <a class="contact-icon" href="mailto:jermainediego08@icloud.com" aria-label="Email Jermaine">
+    <!-- Mail -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6h16a2 2 0 0 1 2 2v.3l-10 6.25L2 8.3V8a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M22 9.5V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5l10 6.25 10-6.25Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://github.com/jermainediego321-sys/progress-sasol-learner" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+    <!-- GitHub -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.26.79-.57v-2.03c-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.72 0-1.27.46-2.32 1.2-3.14-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.2a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.2 3.2-1.2.63 1.59.23 2.77.11 3.06.74.82 1.2 1.87 1.2 3.14 0 4.45-2.7 5.42-5.28 5.71.42.36.8 1.07.8 2.17v3.22c0 .32.2.68.8.57A11.5 11.5 0 0 0 12 .5Z"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://www.linkedin.com/in/jermaine-richards-314b8a326/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+    <!-- LinkedIn -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M4.98 3.5a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96ZM3.5 9h3v12h-3V9Zm6 0h2.86v1.66h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 2 3.59 4.6V21h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.77 0-2.04 1.38-2.04 2.79V21h-3V9Z"/>
+    </svg>
+  </a>
+</div>
+
+  <!-- Small helpers -->
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => {
+        links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', links.classList.contains('open'));
+      });
+    }
+    // Footer year
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

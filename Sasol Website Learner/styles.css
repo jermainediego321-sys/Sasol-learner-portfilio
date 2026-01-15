@@ -28,10 +28,10 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 
-/* Containers */
+
 .container{width:min(1100px, 92%); margin-inline:auto}
 
-/* Header / Nav */
+
 .site-header{
   position:sticky; top:0; z-index:50;
   background:rgba(11,18,32,0.7);
@@ -48,13 +48,13 @@ body{
 }
 .nav-links a:hover{color:#fff; background:rgba(10,132,255,.1)}
 
-/* Mobile toggle */
+
 .nav-toggle{display:none; background:none; border:0; cursor:pointer}
 .nav-toggle .bar{
   display:block; width:24px; height:2px; background:#fff; margin:5px 0; border-radius:2px
 }
 
-/* Hero */
+
 .hero{padding:64px 0}
 .hero-inner{
   display:grid; gap:28px; align-items:stretch;
@@ -81,7 +81,7 @@ h3{margin:.2rem 0 1rem}
 }
 .panel-title{margin-top:0}
 
-/* Buttons / Badges / Pills */
+
 .btn{
   display:inline-block; text-decoration:none; color:#fff; padding:12px 16px;
   border-radius:12px; transition: all .2s ease; border:1px solid transparent
@@ -105,7 +105,7 @@ h3{margin:.2rem 0 1rem}
   padding:6px 10px; border-radius:999px; font-size:.85rem
 }
 
-/* Sections & Cards */
+
 .section{padding:60px 0}
 .section.alt{background:linear-gradient(180deg, rgba(255,255,255,.02), transparent), var(--panel-alt)}
 .card{
@@ -124,7 +124,7 @@ h3{margin:.2rem 0 1rem}
   .grid.two, .grid.three{grid-template-columns:1fr}
 }
 
-/* Lists */
+
 ul{padding-left:18px}
 ul.checklist{list-style:none; padding:0}
 ul.checklist li{
@@ -135,7 +135,7 @@ ul.checklist li::before{
 }
 ul.bullets{padding-left:18px}
 
-/* Timeline */
+
 .timeline{list-style:none; padding:0; margin:24px 0; border-left:2px solid #2a3b5f}
 .timeline li{position:relative; margin:0 0 24px 18px}
 .timeline .dot{
@@ -144,7 +144,7 @@ ul.bullets{padding-left:18px}
 }
 .timeline .content{background:#0e1424; border:1px solid var(--border); border-radius:12px; padding:14px}
 
-/* Contact table */
+
 .contact-card{max-width:800px; margin:0 auto}
 .contact-table{display:grid; gap:12px}
 .table-row{
@@ -156,12 +156,12 @@ ul.bullets{padding-left:18px}
 .value a{color:#e6f1ff; text-decoration:none}
 .value a:hover{text-decoration:underline}
 
-/* Footer */
+
 .site-footer{border-top:1px solid var(--border); padding:28px 0; background:rgba(11,18,32,.8)}
 .footer-inner{display:flex; flex-direction:column; align-items:center; gap:6px}
 .muted{color:var(--muted)}
 
-/* Mobile nav behavior */
+
 @media (max-width: 900px){
   .nav-toggle{display:block}
   .nav-links{
@@ -174,22 +174,113 @@ ul.bullets{padding-left:18px}
 
 
 
-/* Base image */
+
 body {
   background: url("sasol-bg.jpg") center / cover no-repeat fixed;
   color: #f2f6ff;
-  position: relative; /* required for the overlay */
+  position: relative; 
 }
 
-/* Gradient overlay layered on top of the image */
+
 body::before {
   content: "";
   position: fixed;
-  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  inset: 0; 
   pointer-events: none;
-  /* Smooth diagonal gradient with darkening for readability */
+  
   background:
     linear-gradient(135deg, rgba(11, 18, 32, 0.75), rgba(10, 132, 255, 0.35));
-  z-index: -10; /* sits behind all content */
+  z-index: -10; 
+}
+
+
+
+
+
+
+
+/* Compact, centered contact icon strip */
+.contact-mini-wrap{
+  display:flex;
+  justify-content:center;   /* centers in footer */
+  align-items:center;
+  gap:12px;
+  margin-top:12px;
+  padding:8px 10px;         /* small inset so it stands out a bit */
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.04), transparent 60%),
+    rgba(15, 22, 40, 0.55);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(10,132,255,.12);
+}
+
+.contact-icon{
+  display:inline-flex;
+  width:32px; height:32px;
+  align-items:center; justify-content:center;
+  border:1px solid var(--border);
+  border-radius:8px;
+  color:#e6f1ff;
+  background:#0f1628;
+  text-decoration:none;
+  transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease, color .15s ease, background .15s ease;
+}
+.contact-icon svg{ width:18px; height:18px; display:block }
+
+.contact-icon:hover,
+.contact-icon:focus-visible{
+  transform:translateY(-1px);
+  border-color:rgba(10,132,255,.45);
+  color:var(--accent-2);
+  background:linear-gradient(180deg, rgba(255,255,255,.02), transparent), #111a2c;
+  box-shadow:0 10px 20px rgba(10,132,255,.18);
+  outline:none;
+}
+
+
+
+/* Progress bar (cards) */
+.progress{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 70%), #0e1424;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.25);
+  margin: 8px 0 6px;
+}
+.progress-bar{
+  width: var(--progress, 0%);
+  height: 100%;
+  background: linear-gradient(135deg, var(--accent), #2563eb);
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,.15);
+  transition: width .4s ease;
+}
+
+/* Progress meta row */
+.progress-meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-size:.9rem;
+  color:#cfe1ff;
+  margin-bottom:8px;
+}
+
+/* Optional: checkbox visual polish inside cards */
+.card input[type="checkbox"]{
+  accent-color: var(--accent);
+  transform: translateY(1px);
+  margin-right: 8px;
+}
+.card label{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 

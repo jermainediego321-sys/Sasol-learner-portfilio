@@ -25,11 +25,11 @@
       </button>
 
       <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="cloud.html">Cloud (AZ-900 / AZ-104)</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="cloud.html">Cloud (AZ-104 & AZ-400)</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="index.html#journey">Learning Journey</a></li>
+        <li><a href="journey.html">Learning Journey</a></li>
         <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
@@ -45,8 +45,8 @@
 <p class="subtitle">
   A Learner under the Administration stream, actively contributing to the <strong>IM Cloud</strong> space.<br>
   My responsibilities include supporting cloud governance, resource optimization, and automation initiatives that align with Sasol’s digital transformation goals.<br />
-  I am passionate about designing repeatable solutions, implementing Infrastructure as Code (IaC), and ensuring compliance through proper tagging and backup strategies.<br />
-  Beyond technical tasks, I focus on clear documentation, stakeholder communication, and continuous learning in Microsoft Azure (AZ-900 & AZ-104) to strengthen operational excellence.<br>
+  I am passionate about developing robust solutions, implementing Infrastructure as Code (IaC), and ensuring compliance through proper tagging and backup strategies.<br />
+  Beyond technical tasks, I focus on clear documentation, stakeholder communication, and continuous learning in Microsoft Azure (AZ-104 & AZ-400) to strengthen operational excellence.<br>
 </p>
 
 
@@ -109,55 +109,162 @@
       </div>
     </section>
 
-  
-    <section class="section alt">
-      <div class="container">
-        <h2>Cloud (Microsoft Azure)</h2>
-        <div class="grid two">
-          <article class="card focus">
-            <h3>AZ-900: Azure Fundamentals</h3>
-            <p class="muted">Status: <strong>In progress / practiced via labs</strong></p>
-            <ul class="checklist">
-              <li>Cloud concepts & shared responsibility</li>
-              <li>Core services: Compute, Networking, Storage, Databases</li>
-              <li>Management tools: Portal, CLI, Cloud Shell</li>
-              <li>Security, governance & compliance basics</li>
-              <li>Cost management and SLAs</li>
-            </ul>
-            <a href="cloud.html#az900" class="btn small">See details</a>
-          </article>
+<section class="section alt">
+  <div class="container">
+    <h2>Cloud (Microsoft Azure)</h2>
 
-          <article class="card focus">
-            <h3>AZ-104: Azure Administrator</h3>
-            <p class="muted">Status: <strong>Active preparation with hands-on labs</strong></p>
-            <div class="pill-row">
-              <span class="pill">VNets & Subnets</span>
-              <span class="pill">NSGs</span>
-              <span class="pill">VMs & Images</span>
-              <span class="pill">Storage</span>
-              <span class="pill">Backup & RSV</span>
-              <span class="pill">Azure Monitor</span>
-              <span class="pill">Log Analytics</span>
-              <span class="pill">RBAC</span>
-              <span class="pill">Tags & Locks</span>
-              <span class="pill">Automation</span>
-            </div>
-            <ul class="bullets">
-              <li>Deployed VNets with subnets & address spaces</li>
-              <li>Created NSGs and validated connectivity</li>
-              <li>Provisioned VMs; accessed via Bastion and RDP/SSH</li>
-              <li>Configured Recovery Services Vault & backup policies</li>
-              <li>Set up monitoring (metrics, logs, alert rules)</li>
-              <li>Applied RBAC for least privilege</li>
-              <li>Governed resources with tags and cleanup scripts</li>
-            </ul>
-            <a href="cloud.html#az104" class="btn small">See details</a>
-          </article>
+    <!-- 3 cards side-by-side on desktop, stack on mobile -->
+    <div class="grid three">
+
+      <!-- AZ-900 -->
+      <article class="card focus">
+        <h3>AZ-900: Azure Fundamentals</h3>
+        <p class="muted">Status: <strong>Completed / reinforced via hands-on labs</strong></p>
+
+        <!-- Progress -->
+        <div class="progress" role="progressbar" aria-label="AZ-900 progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+          <div class="progress-bar" style="--progress: 100%"></div>
         </div>
-      </div>
-    </section>
+        <div class="progress-meta">
+          <span>Progress</span><span>100%</span>
+        </div>
 
-   
+        <!-- Real checkboxes -->
+        <ul class="bullets" style="list-style:none; padding-left:0; margin: 12px 0;">
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              Cloud concepts & shared responsibility
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              Core services: Compute, Networking, Storage, Databases
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              Management tools: Portal, CLI, Cloud Shell
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              Security, governance & compliance basics
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              Cost management and SLAs
+            </label>
+          </li>
+        </ul>
+
+        <a href="cloud.html#az900" class="btn small">See details</a>
+      </article>
+
+      <!-- AZ-104 -->
+      <article class="card focus">
+        <h3>AZ-104: Azure Administrator</h3>
+        <p class="muted">Status: <strong>Active preparation with hands-on labs</strong></p>
+
+        <!-- Progress -->
+        <div class="progress" role="progressbar" aria-label="AZ-104 progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+          <div class="progress-bar" style="--progress: 95%"></div>
+        </div>
+        <div class="progress-meta">
+          <span>Progress</span><span>95%</span>
+        </div>
+
+        <div class="pill-row">
+          <span class="pill">VNets & Subnets</span>
+          <span class="pill">NSGs</span>
+          <span class="pill">VMs & Images</span>
+          <span class="pill">Storage</span>
+          <span class="pill">Backup & RSV</span>
+          <span class="pill">Azure Monitor</span>
+          <span class="pill">Log Analytics</span>
+          <span class="pill">RBAC</span>
+          <span class="pill">Tags & Locks</span>
+          <span class="pill">Automation</span>
+        </div>
+
+        <!-- Real checkboxes -->
+        <ul class="bullets" style="list-style:none; padding-left:0; margin: 12px 0;">
+          <li>
+            <label><input type="checkbox" checked /> Deployed VNets with subnets & address spaces</label>
+          </li>
+          <li>
+            <label><input type="checkbox" checked /> Created NSGs and validated connectivity</label>
+          </li>
+          <li>
+            <label><input type="checkbox" checked /> Provisioned VMs; access via Bastion and RDP/SSH</label>
+          </li>
+          <li>
+            <label><input type="checkbox" checked /> Configured Recovery Services Vault & backup policies</label>
+          </li>
+          <li>
+            <label><input type="checkbox" checked /> Set up monitoring (metrics, logs, alert rules)</label>
+          </li>
+          <li>
+            <label><input type="checkbox" checked /> Applied RBAC for least privilege</label>
+          </li>
+          <li>
+            <label><input type="checkbox" checked /> Governed resources with tags and cleanup scripts</label>
+          </li>
+        </ul>
+
+        <a href="cloud.html#az104" class="btn small">See details</a>
+      </article>
+
+      <!-- AZ-400 -->
+      <article class="card focus">
+        <h3>AZ-400: DevOps </h3>
+        <p class="muted">Status: <strong>In progress - IaC & security gates.</strong></p>
+        <div class="progress" role="progressbar" aria-label="AZ-400 progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35">
+          <div class="progress-bar" style="--progress: 45%"></div>
+        </div>
+        <div class="progress-meta">
+          <span>Progress</span><span>45%</span>
+        </div>
+
+        <div class="pill-row">
+          <span class="pill">GitHub Actions</span>
+          <span class="pill">Azure DevOps</span>
+          <span class="pill">Bicep</span>
+          <span class="pill">Terraform</span>
+          <span class="pill">Key Vault</span>
+          <span class="pill">App Insights</span>
+        </div>
+
+        <!-- Real checkboxes -->
+        <ul class="bullets" style="list-style:none; padding-left:0; margin: 12px 0;">
+          <li>
+            <label><input type="checkbox" checked /> CI/CD for Static Web Apps (build/test/deploy)</label>
+          </li>
+          <li>
+            <label><input type="checkbox" checked /> IaC baselines (Bicep; exploring Terraform)</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> Secrets mgmt via Key Vault (actions/agents)</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> Security gates: SAST, dependency checks</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> Monitoring & feedback with Azure Monitor / App Insights</label>
+          </li>
+        </ul>
+
+        <a href="cloud.html#az400" class="btn small">See details</a>
+      </article>
+
+    </div>
+  </div>
+</section>
     <section id="journey" class="section">
       <div class="container">
         <h2>Learning Journey</h2>
@@ -189,12 +296,29 @@
   </main>
 
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Jermaine Richards: Sasol Learner Portfolio</p>
-      <p class="muted">Built with HTML5, JavaScript, VS Code, Python, and CSS. Deployed from GitHub Pages.</p>
-    </div>
-  </footer>
+<div class="contact-mini-wrap" role="group" aria-label="Contact me on">
+  <a class="contact-icon" href="mailto:jermainediego08@icloud.com" aria-label="Email Jermaine">
+    <!-- Mail -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6h16a2 2 0 0 1 2 2v.3l-10 6.25L2 8.3V8a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M22 9.5V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5l10 6.25 10-6.25Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://github.com/jermainediego321-sys/progress-sasol-learner" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+    <!-- GitHub -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.26.79-.57v-2.03c-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.72 0-1.27.46-2.32 1.2-3.14-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.2a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.2 3.2-1.2.63 1.59.23 2.77.11 3.06.74.82 1.2 1.87 1.2 3.14 0 4.45-2.7 5.42-5.28 5.71.42.36.8 1.07.8 2.17v3.22c0 .32.2.68.8.57A11.5 11.5 0 0 0 12 .5Z"/>
+    </svg>
+  </a>
+
+  <a class="contact-icon" href="https://www.linkedin.com/in/jermaine-richards-314b8a326/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+    <!-- LinkedIn -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M4.98 3.5a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96ZM3.5 9h3v12h-3V9Zm6 0h2.86v1.66h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 2 3.59 4.6V21h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.77 0-2.04 1.38-2.04 2.79V21h-3V9Z"/>
+    </svg>
+  </a>
+</div>
 
   <script src="script.js">
 
