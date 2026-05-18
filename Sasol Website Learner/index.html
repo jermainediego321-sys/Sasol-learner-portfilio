@@ -293,6 +293,13 @@
         </ol>
       </div>
     </section>
+    <section class="section alt">
+  <div class="container">
+    <h2>🌤 Live Weather</h2>
+    <div id="weather-widget"></div>
+  </div>
+</section>
+
   </main>
 
 
@@ -336,6 +343,51 @@ if (year) year.textContent = new Date().getFullYear();
 
 
   </script>
+
+  <script>
+  async function loadWeather(city) {
+    const apiKey = "YOUR_API_KEY"; // Replace with your OpenWeather API key
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},ZA&appid=${apiKey}&units=metric`;
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      return {
+        name: data.name,
+        temp: Math.round(data.main.temp),
+        condition: data.weather[0].description,
+        icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+      };
+    } catch (error) {
+      console.error("Weather fetch failed:", error);
+      return { name: city, temp: "-", condition: "Unavailable", icon: "" };
+    }
+  }
+
+  async function displayWeather() {
+    const cities = ["Secunda", "Sasolburg", "Johannesburg"];
+    let html = "<div class='grid three'>";
+
+    for (const city of cities) {
+      const w = await loadWeather(city);
+      html += `
+        <article class="card">
+          <h3>${w.name}</h3>
+          ${w.icon ? `<img src="${w.icon}" alt="${w.condition}" style="width:60px;">` : ""}
+          <p><strong>${w.temp}°C</strong></p>
+          <p class="muted">${w.condition}</p>
+        </article>
+      `;
+    }
+
+    html += "</div>";
+    document.getElementById("weather-widget").innerHTML = html;
+  }
+
+  displayWeather();
+  setInterval(displayWeather, 600000); // auto-refresh every 10 minutes
+</script>
 </body>
 </html>
 
